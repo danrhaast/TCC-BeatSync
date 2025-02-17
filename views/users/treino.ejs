@@ -1,0 +1,62 @@
+<main id="body">
+
+    <style>
+        #main2 {
+            flex-direction: row;
+        }
+    </style>
+
+    <div id="main2">
+        <div class="form-treino">
+            <form class="form2" onsubmit="mostrarConteudo(event)"> <!-- Submete para a rota correta -->
+                <h2>Treino</h2>
+                <p class="pgtreino">Escolha uma das opções de treino abaixo</p>
+                <div class="fpr-treino">
+                    <div class="camp-treino">
+                        <select class="input1" name="tipo" id="opcoes">
+                            <option id="opcoes" value="1">Musculação</option>
+                            <option id="opcoes" value="2">Cardio</option>
+                            <option id="opcoes" value="3">Funcional</option>
+                            <option id="opcoes" value="4">CrossFit</option>
+                        </select>
+                    </div>
+                    <div class="btn">
+                        <button class="botao" type="submit">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="conjunto-botao">
+            <a href="/">
+                <button class="btn-table">
+                  <span class="span-table">Voltar</span>
+                </button>
+            </a>
+            <a href="/users/playlist" target="_blank">
+                <button class="btn-table">
+                  <span class="span-table">Playlists</span>
+                </button>
+            </a>
+        </div>
+    </div>
+</main>
+<script>
+    function mostrarConteudo(event) {
+        // Evita o envio padrão do formulário
+        event.preventDefault();
+
+        // Obter o valor selecionado no <select>
+        const opcoes = document.getElementById('opcoes').value;
+
+        // Redirecionar para uma rota específica baseada no valor selecionado
+        if (opcoes == 1) {
+            window.location.href = '/musculacao';
+        } else if (opcoes == 2) {
+            window.location.href = '/cardio';
+        } else if (opcoes == 3) {
+            window.location.href = '/funcional';
+        } else if (opcoes == 4) {
+            window.location.href = '/cross';
+        }
+    }
+</script>

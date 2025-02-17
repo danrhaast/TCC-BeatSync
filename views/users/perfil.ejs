@@ -1,0 +1,101 @@
+<style>
+
+    #title {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        font-size: 40px;
+        margin-right: 300px;
+    }
+    .h1title {
+        color: white;
+        text-shadow: 3px 2px 2px #20010085;
+        font-weight: bolder;
+    }
+    #saibaMais {
+        background-color: #000000; /* fundo semitransparente */
+        padding: 25px;
+        font-size: 18px; /* ajuste conforme necessário */
+        border-radius: 10px;
+        color: white;
+        transition: 1s ease;
+        text-align: left;
+        width: 25vw;
+    }
+
+    #saibaMais:hover {
+        box-shadow: 9px 9px 5px #20010085;
+    }
+    .corpinho {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .divisao_terapeutica {
+        background-color: #fff;
+        color: #000;
+        margin: 2px;
+        border-radius: 8px;
+        align-items: center;
+        padding: 8px;
+    }
+
+    #posts {
+        display: flex;
+    }
+
+</style>
+
+<main id="body">
+<div class="corpinho">
+    <div id="title">
+        <h1 class="h1title">Bem-Vindo!</h1>
+        <a href="/">
+            <button class="btn-table">
+              <span class="span-table">Voltar</span>
+            </button>
+        </a>
+    </div>
+
+        <div id="saibaMais">
+            <div class="divisao_terapeutica">
+                <p><strong>Nome: </strong> <%= userNome %> </p><br>
+            </div>
+            
+            <div class="divisao_terapeutica">
+                <p><strong>Data de Nascimento: </strong> <%= userData_nasc %> </p> <br>
+            </div>
+
+            <div class="divisao_terapeutica">
+                <p><strong>Email: </strong> <%= userEmail %> </p> <br>
+            </div>
+
+            <div class="divisao_terapeutica">
+                <p><strong>Gênero: </strong> <%= userGenero %> </p> <br>
+            </div>
+
+            <div class="divisao_terapeutica">
+                <p><strong>Peso: </strong> <%= userPeso %> </p> <br>
+            </div>
+
+            <div class="divisao_terapeutica">
+                <p><strong>Altura: </strong> <%= userAltura %> </p> <br>
+            </div>
+
+            <div id="posts">
+                <div class="btn">
+                    <a href="editar"><button class="botao">Editar</button></a>
+                </div>
+
+                <div class="btn">
+                    <a href="/logout"><button class="botao" type="submit">Sair</button></a>
+                </div>
+    
+                <form action="deletar" method="POST" id="delete">
+                    <a href="deletar"><button class="botao" type="submit">Deletar</button></a>
+                </form>
+            </div>
+        </div>
+</div>
+</main>

@@ -1,0 +1,51 @@
+
+<main id="mainPl">
+    <div>
+        <div id="forPlay">
+            <iframe style= "border-radius:12px" src="https://open.spotify.com/embed/playlist/49qhNa9r1lBRhBIl6mK9gJ?utm_source=generator" loading="lazy"></iframe>
+        </div>
+    </div>
+    <div>
+        <div id="forPlay">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/27XBqNssh1RpXmX3PkIugS?utm_source=generator" loading="lazy"></iframe>
+        </div>
+    </div>
+    <div>
+        <div>
+            <div id="forPlay">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5QrYVaNUgMsQHXxsUU4lcE?utm_source=generator" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</main>
+
+<style>
+
+
+    #forPlay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 9px rgba(255, 255, 255, 0.8);
+        border-radius: 13px;
+        opacity: 0; 
+        animation: aparecer 2s forwards; 
+        margin: 10px;
+    }
+    @keyframes aparecer {
+        0% {
+            opacity: 0;
+            transform: scale(0.8); 
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1); 
+        }
+    }
+
+    iframe {
+        width: 30vw;
+        height: 70vh;
+    }
+
+</style>

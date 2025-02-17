@@ -1,0 +1,97 @@
+<main id="body">    
+
+    <div class="previa">
+        <h1>Prévia</h1>
+        <img id="previa" src="/images/previa.png">
+    </div>
+
+    <style>
+        .previa {
+            margin-right: 2vw;
+            border-top: 20px;
+            text-align: center;
+            background-color: black;
+            border-radius: 10px;
+            color: white;
+            transition: 1s ease;
+            padding: 5px;
+        }
+
+        .previa:hover {
+            box-shadow: -9px 9px 5px #20010085;
+        }
+
+        #previa {
+            height: 59vh;
+            border-radius: 10px;
+        }
+
+        #main-treino{
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+
+<div id="main-treino">
+  <div class="form-treino">
+      <form class="form2" onsubmit="mostrarConteudo(event)"> <!-- Submete para a rota correta -->
+          <h2>Playlists</h2>
+          <p class="pgtreino">Escolha suas preferências musicais com o treino</p>
+          <div class="fpr-treino">
+              <div class="camp-treino">
+                <select class="input2" name="play" id="playlists">
+                    <option id="playlists" value="a1">Funk/Phonk/Pop</option>
+                    <option id="playlists" value="a2">Phonk/Metal/Pop</option>
+                    <option id="playlists" value="a3">Eletro/Hip-Hop/Metal</option>
+                    <option id="playlists" value="a4">Hip-Hop/Metal/Pop</option>
+                </select>
+            </div>
+              <div class="btn">
+                  <button class="botao" type="submit">Enviar</button>
+              </div>
+          </div>
+      </form>
+  </div>
+  <div class="conjunto-botao">
+    <a href="/">
+        <button class="btn-table">
+          <span class="span-table">Início</span>
+        </button>
+    </a>
+    <a href="/users/treino">
+        <button class="btn-table">
+          <span class="span-table">Treinos</span>
+        </button>
+    </a>
+    </div>
+</div>
+</main>
+
+
+
+
+<script>
+  function mostrarConteudo(event) {
+      // Evita o envio padrão do formulário
+      event.preventDefault();
+
+      // Obter o valor selecionado no <select>
+      const playlists = document.getElementById('playlists').value;
+
+      // Redirecionar para uma rota específica baseada no valor selecionado
+      if (playlists == 'a1') {
+          window.location.href = '/funk_phonk_pop';
+
+      } else if (playlists == 'a2') {
+          window.location.href = '/phonk_metal_pop';
+
+      } else if (playlists == 'a3') {
+          window.location.href = '/eletro_hiphop_metal';
+
+      } else if (playlists == 'a4') {
+          window.location.href = '/hiphop_metal_pop';
+      }
+  }
+
+
+</script>

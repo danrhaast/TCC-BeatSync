@@ -1,0 +1,55 @@
+
+
+    <main id="body">
+    <div class="form">
+        <form action="/users/cadastro" method="POST">
+            <h2>Cadastro</h2>
+                <div class="form1">
+                    <label for="nome">Nome:</label>
+                    <input class="input" type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="form1">
+                    <label for="email">Email:</label>
+                    <input class="input" type="text" id="email" name="email" required>
+                </div>
+
+                <div class="form1">
+                    <label for="dataNasc">Data de Nascimento:</label>
+                    <input class="input"  type="date" id="dataNasc" name="dataNasc" required>
+                </div>
+
+                <div class="form1">
+                    <label for="peso">Peso:</label>
+                    <input class="input"  type="text" id="peso" name="peso" required>
+                </div>
+
+                <div class="form1">
+                    <label for="altura">Altura:</label>
+                    <input class="input"  type="text" id="altura" name="altura" required>
+                </div>
+
+                <div class="form1">
+                    <label for="genero">Gênero:</label>
+                    <br>
+                    <label for="genero-masculino">Masculino</label>
+                    <input class="input" type="radio" id="genero-masculino" name="genero" value="masculino" required>
+                    <br>
+                    <label for="genero-feminino">Feminino</label>
+                    <input class="input" type="radio" id="genero-feminino" name="genero" value="feminino" required>
+                    <br>
+                    <label for="genero-outro">Outro</label>
+                    <input class="input" type="radio" id="genero-outro" name="genero" value="outro" required>
+                </div>
+
+                <div class="form1">
+                    <label for="senha">Senha:</label>
+                    <input class="input" type="password" id="senha" name="senha" required>
+                </div>
+
+                <div class="btn">
+                    <button class="botao" type="submit">Enviar</button>
+                </div>
+        </form>
+    </div>
+</main>

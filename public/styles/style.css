@@ -1,0 +1,623 @@
+    
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+/* EDIÇÃO PADRÃO DO SITE */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(#ea7454, #c1421d, #b42c0e, #721208, #360402);
+    font-family: "Abel", sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+/* CABEÇALHO */
+
+.header {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;    
+}
+
+.nav {
+    display: flex;
+}
+
+.nav-link {
+    padding-left: 15px;
+    text-decoration: none;
+    font-family: "bebas Neue";
+    font-size: 20px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.link {
+    text-decoration: none;
+    font-family: "bebas Neue";
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.link:hover {
+    background-color: #b42c0e;
+    transition: 0.4s;
+}
+
+ul {
+    display: flex;
+    margin: 16px;
+}
+
+.cabeca {
+    text-decoration: none;
+    color: rgb(228, 226, 226);
+    margin: 16px;
+    font-size: 20px;
+    font-family: "Bebas Neue";
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.cabeca:hover {
+    background-color: #b42c0e;
+    transition: 0.4s;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+#logo {
+    width: 70px;
+    height: auto;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+/* CORPO PADRÃO */
+main {
+    display: flex;
+    flex: 1 1 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#body {
+    animation: aparecer 1.9s forwards; 
+}
+
+#playlist {
+    animation: aparecer 1.9s forwards; 
+}
+
+#treino {
+    animation: aparecer 1.9s forwards;
+}
+
+.barra {
+    width: 60vw;
+    background-color:#000000;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    transition: 1s ease;
+    padding: 15px;
+}
+
+.barra:hover {
+    background-color: #000000;
+    box-shadow: -9px 9px 5px #20010085;
+}
+
+.icons-princ{
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+
+.icons-princ p {
+    font-size: larger;
+}
+
+.comp {
+    text-decoration: none;
+    color: white;
+}
+
+.comp p {
+    text-align: center;
+}
+
+.component {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    outline: 2px solid transparent; 
+    transition: outline-color 0.2s ease;
+    box-sizing: border-box;
+}
+
+.component:hover {
+    outline: 2px solid rgb(255, 160, 160);
+    padding: 2px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+/* RODAPÉ */
+
+footer {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    justify-content: center;
+}
+.text-fote {
+    align-self: center;
+    color: white;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+/* SOBRE NÓS */
+
+#sobreNos {
+    background-color: #830400; /* fundo semitransparente */
+    padding: 50px;
+    font-size: 18px; /* ajuste conforme necessário */
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    transition: 1s ease;
+}
+
+#sobreNos:hover {
+    background-color: #000000;
+    box-shadow: -9px 9px 5px #20010085;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #000000;
+}
+
+form {
+    background-color: #000000;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size: 15px;
+    transition: 1s ease;
+    height: auto;
+    padding: 8px;
+    width: 30vw;
+}
+
+.form1 {
+    padding: 5px;
+    margin: 6px;
+    border: solid;
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+form h2 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+form:hover {
+    box-shadow: -9px 9px 5px #20010085;
+}
+
+.input {
+    background: none;
+    color: rgb(0, 0, 0);
+    border-bottom: 1px 1px 1px rgb(255, 255, 255);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;  
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7px;
+}
+
+.botao {
+    background-color: #721208;
+    border: none;
+    width: 16vh;
+    height: 8vh;
+    border-radius: 8px;
+    color: #c9a8a4;
+    transition: 0.5s ease;
+    font-size: large;
+    margin-top: 10px;
+}
+
+.botao:hover {
+    background-color: rgb(219, 105, 70);
+    color: black;
+}
+
+/* style texto para caminho de login e cadastro*/
+.text-guiacadastro {
+    color: #FFFFFF;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.text-guiacadastro a {
+    transition: 0.5s ease;
+    color: #ff3932;
+}
+
+.text-guiacadastro a:hover {
+    color: #8d0f0b;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+/*  */
+
+.ficha-completa {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 20%;
+    background-color: #000000;
+    padding: 10px;
+    color: white;
+    height: 300px;
+    margin-top: 60px;
+    transition: 1.5s ease;
+    border-radius: 10px;
+}
+
+.ficha-completa:hover {
+    background-color: #000000;
+    box-shadow: -9px 9px rgba(0, 0, 0, 0.703);
+}
+
+.ficha-completa h1 {
+    justify-content: center;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.ficha-user {
+    color: #000000;
+}
+
+.ficha-campo th, .ficha-campo td {
+    width: 50%;
+    padding: 10px;
+    background-color: rgb(255, 255, 255); 
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+/* FORMULÁRIO DE TREINO */
+
+
+.main-treino {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-treino {
+    padding: 20px;
+    background-color: #000000;
+    color: rgb(0, 0, 0);border-radius: 10px;
+    font-size:larger;
+    transition: 1s ease;
+    height: auto;
+    padding: 8px;
+}
+
+.form-treino:hover {
+    box-shadow: -9px 9px 5px #20010085;
+}
+
+.camp-treino {
+    background-color: white;
+    margin: 6px;
+    padding: 8px;
+    border-color: white;
+    border-radius: 5px;
+}
+
+.camp-treino select {
+    border: white;
+    font-size: 20px;
+    display: flex;
+}
+
+/* INPUT PARA SELEÇÃO DE TREINO */
+.input1 {
+    background: none;
+    color: rgb(0, 0, 0);
+    border-bottom: 1px 1px 1px rgb(0, 0, 0);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+
+h2 {
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+/* INPUT PARA SELEÇÃO DE PLAYLIST */
+.input2 {
+    background: none;
+    color: rgb(0, 0, 0);
+    border-bottom: 1px 1px 1px rgb(0, 0, 0);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+
+p.pgtreino {
+    text-align: center;
+    font-size: 10;
+    color: white;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.fpr-treino {
+    justify-content: center;
+}
+
+.form-treino > div {
+    margin-bottom: 15px; /* Espaçamento entre os campos */
+    flex-direction: column;
+    background-color: #000000;
+}
+
+.form2 {
+    background-color: #000000;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size:larger;
+    transition: 1s ease;
+    height: auto;
+    padding: 8px;
+}
+
+/* início do style de tabela de treino*/
+    
+    .table-treino {
+        background-color: #000000;
+        border: 1px solid rgb(0, 0, 0);
+        width: 100%;
+        height: 40%;
+    }
+
+    .titulo-table {
+        display: flex;
+    }
+
+    th {
+        color: rgb(0, 0, 0);
+        border: 1.5px solid rgb(0, 0, 0);
+        font-weight: bolder;
+        background-color:  #8d2825;
+    }
+    td {
+        padding-left: 3PX;
+        padding-right: 3PX;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        border: 1.5px solid rgb(0, 0, 0);
+        font-weight: bolder;
+        background-color: #ffffff;
+    }
+    .table-conjunto {
+        background-color: #83040028;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: -9px 9px 5px #7c040085;
+        width: 75vw;
+    }
+/*fim do style de tabela de treinos*/
+
+/*Style do botão de voltar e exemplo nos treinos*/
+    .btn-table {
+        font-size: 25px;
+        align-items: center;
+        padding: 10px;
+        width: 150px;
+        border: #000000;
+        background-color: black;
+        border-radius: 5px;
+        color: white;
+        padding-top: 20px;
+        padding: 16px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+        .conjunto-botao {
+            justify-content: space-between;
+            display: flex;
+            margin-top: 25px;
+            animation: aparecer 3s forwards; 
+        }
+        @keyframes aparecer {
+            0% {
+                opacity: 0;
+                transform: scale(0.8); 
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1); 
+            }
+        }
+
+
+    .btn-table a {
+        color: inherit;
+        text-decoration: none;
+      }
+      
+      .btn-table span {
+       cursor: pointer;
+       display: inline-block;
+       position: relative;
+       transition: 0.5s;
+      }
+      
+      .btn-table span:after {
+       content: '»';
+       position: absolute;
+       opacity: 0;
+       top: 0;
+       right: -15px;
+       transition: 0.5s;
+      }
+      
+      .btn-table:hover span {
+       padding-right: 15px;
+      }
+      
+      .btn-table:hover span:after {
+       opacity: 1;
+       right: 0;
+      }
+/*-------------------------------------------------------------------------------------------------*/
+/*style do botão interno da tabela*/
+    .btn-interno-table {
+    display: inline-block;
+    border-radius: 500px;
+    background-color: #000000;
+    border: none;
+    color: #c4c4c4;
+    text-align: center;
+    font-size: 17px;
+    padding-top: 20px;
+    padding: 16px;
+    width: 55px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    transition: outline-color 0.2s ease;
+   }
+
+   .btn-interno-table:hover {
+    outline: 3px solid rgb(255, 160, 160);
+}
+
+   .btn-interno-table a {
+     color: inherit;
+     text-decoration: none;
+   }
+   
+   .btn-interno-table span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+   }
+   
+   .btn-interno-table span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+   }
+   
+   .btn-interno-table:hover span {
+    padding-right: 15px;
+   }
+   
+   .btn-interno-table:hover span:after {
+    opacity: 1;
+    right: 0;
+   }
+/*--------------------------------------------------------------------------------------------------------*/
+/*style conjunto botão de playlist*/
+.btn-playlist {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #000000;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding-top: 20px;
+    padding: 20px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 8px;
+   }
+   .btn-playlist a {
+     color: inherit;
+     text-decoration: none;
+   }
+   
+   .btn-playlist span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+   }
+   
+   .btn-playlist span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+   }
+   
+   .btn-playlist:hover span {
+    padding-right: 15px;
+   }
+   
+   .btn-playlist:hover span:after {
+    opacity: 1;
+    right: 0;
+   }
+/*--------------------------------------------------------------------------------------------------------*/
+
+
+
